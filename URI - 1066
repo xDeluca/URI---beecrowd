@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <iostream>
+ 
+int main() {
+ 
+  int A, cont, contA, contB, contC, contD;
+  cont= 0;
+  contA = 0;
+  contB = 0;
+  contC = 0;
+  contD = 0;
+  while(contA<5)
+{
+    scanf("%d" , &A);
+    if(A % 2==0){
+        cont++;
+    } else {
+        contB++;
+    }
+    if (A>0){
+        contC++;
+    }else if (A<0){
+        contD++;
+    }
+    contA++;
+} 
+  printf("%d valor(es) par(es)\n" , cont);
+  printf("%d valor(es) impar(es)\n" , contB);
+  printf("%d valor(es) positivo(s)\n" , contC);
+  printf("%d valor(es) negativo(s)\n" , contD);
+  
+    return 0;
+}

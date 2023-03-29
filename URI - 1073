@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+ ------------------------------------
+ 
+ 
+int main() {
+ int A, contador, quadrado; 
+ contador =2;
+ scanf("%d" , &A);
+   while (A>=contador){
+       if(A%2==0){
+           quadrado = pow(contador,2);
+           printf("%d^2 = %d\n" , contador, quadrado);
+           contador = contador + 2;
+       } else{
+           A = A -1;
+           quadrado = pow(contador,2);
+           printf("%d^2 = %d\n" , contador, quadrado);
+           contador = contador + 2;
+       }
+      
+   }
+ 
+    return 0;
+}
